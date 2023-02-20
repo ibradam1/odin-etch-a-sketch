@@ -158,6 +158,7 @@ body {
     height: 40px;
     background-color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .selectedcolor {
@@ -166,6 +167,7 @@ body {
     margin-left: 10px;
     background-color: white;
     border-radius: 10px;
-    
 }
+
+
 

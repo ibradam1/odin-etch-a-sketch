@@ -60,9 +60,16 @@ slider.oninput = function() {
 
 //Color picker
 let colorList = document.querySelectorAll('.colorgrid > *');
+let selectedColor = document.querySelector('.selectedcolor');
 colorList.forEach((color) => {
     let paletteColor = color.getAttribute('id');
-    color.style.backgroundColor = `${paletteColor}`
+    color.style.backgroundColor = `${paletteColor}`;
+
+    //displays the correct color on the colorpicker
+    color.addEventListener('click', (e) => {
+        let tempColor = e.target.getAttribute('id');
+        selectedColor.style.backgroundColor = `${tempColor}`;
+    });
 })
 
 
@@ -78,6 +85,7 @@ function createGrid(gridSize) {
 
         div.addEventListener('mouseover', (e) => {
             e.target.classList.add('colored');
+            e.target.style.backgroundColor = `${selectedColor.style.backgroundColor}`;
             if (rainEffect === true) {
                 let random = randomRGB();
                 e.target.classList.toggle('colored');
