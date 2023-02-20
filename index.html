@@ -11,9 +11,43 @@
 <body>
     <script src="script.js" defer></script>
     
+    <div class="title">Pixel Canvas</div>
     <div class="site">
+        
+        <div class="controls">
+            <div class="slideContainer">
+                <input type="range" min="1" max="100" value="16" id="myRange" class="slider">
+                <div id="value"></div>
+            </div>
 
-        <button class="size">Grid Size</button>
+            <div id="clearer" class="slideContainer">
+                Clear Canvas
+            </div>
+
+            <div id="Rainbow" class="slideContainer">
+                Rainbowize
+            </div>
+
+            <div class="slideContainer" id="palette">
+                <div class="colorselector">
+                    <div>Color: </div>
+                    <div class="selectedcolor"></div>
+                </div>
+                <div class="colorgrid">
+                    <div id="black"></div>
+                    <div id="red"></div>
+                    <div id="blue"></div>
+                    <div id="green"></div>
+                    <div id="pink"></div>
+                    <div id="orange"></div>
+                    <div id="yellow"></div>
+                    <div id="purple"></div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="grid-container"></div>
 
     </div>
