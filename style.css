@@ -1,4 +1,23 @@
 .grid-container {
     display: grid;
-    grid-template-columns:repeat(16, 20px);
+    
+    background-color: rgb(232, 240, 216);
+    padding: 100px;
+    width: 960px;
+    height: 960px;
+    
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+}
+
+.cell  {
+
+    background-color: white;
+}
+
+.colored {
+    background-color: black;
 }
