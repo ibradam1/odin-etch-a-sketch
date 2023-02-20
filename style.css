@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color:rgb(30, 30, 32)
+    background-color:rgb(30, 30, 32);
+    padding: 100px;
 }
 
 .title {
