@@ -25,7 +25,7 @@ body {
 
 .controls {
     background-color:rgb(72, 72, 78);
-    height: 960px;
+    height: 700px;
     width: 300px;
     display: flex;
     justify-content: center;
@@ -52,8 +52,8 @@ body {
 .grid-container {
     display: grid;
     padding: 0;
-    width: 960px;
-    height: 960px;
+    width: 640px;
+    height: 640px;
     margin-left: 100px;
 }
 
